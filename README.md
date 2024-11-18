@@ -32,7 +32,7 @@
 | shipping_method        | string     | null: false       |
 | shipping_from          | string     | null: false       |
 | shipping_duration      | integer    | null: false       |
-| user_id                | references | null: false, foreign_key: true |
+| user                   | references | null: false, foreign_key: true |
 
 #### Association
 - belongs_to :user
@@ -41,9 +41,9 @@
 ### ordersテーブル
 | Column         | Type       | Options           |
 | -------------- | ---------- | ----------------- |
-| item_id        | references | null: false, foreign_key: true |
-| user_id        | references | null: false, foreign_key: true |
-| address_id     | references | null: false, foreign_key: true |
+| item           | references | null: false, foreign_key: true |
+| user           | references | null: false, foreign_key: true |
+| address        | references | null: false, foreign_key: true |
 | payment_status | string     | null: false       |
 | shipment_status| string     | null: false       |
 | total_price    | integer    | null: false       |
@@ -61,7 +61,7 @@
 | city          | string     | null: false       |
 | line          | string     | null: false       |
 | phone         | string     | null: false       |
-| order_id      | references | null: false, foreign_key: true |
+| order         | references | null: false, foreign_key: true |
 
 #### Association
 - belongs_to :order
