@@ -25,18 +25,22 @@
 | ---------------------- | ---------- | ----------------- |
 | name                   | string     | null: false       |
 | description            | text       | null: false       |
-| category               | string     | null: false       |
-| condition              | string     | null: false       |
+| category_id            | integer    | null: false       |
+| condition_id           | integer    | null: false       |
 | price                  | integer    | null: false       |
-| shipping_fee           | string     | null: false       |
-| shipping_method        | string     | null: false       |
-| shipping_from          | string     | null: false       |
-| shipping_duration      | integer    | null: false       |
+| shipping_cost_id       | integer    | null: false       |
+| prefecture_id          | integer    | null: false       |
+| shipping_duration_id   | integer    | null: false       |
 | user                   | references | null: false, foreign_key: true |
 
 #### Association
 - belongs_to :user
 - has_one :order
+- belongs_to :category (ActiveHash)
+- belongs_to :condition (ActiveHash)
+- belongs_to :shipping_cost (ActiveHash)
+- belongs_to :prefecture (ActiveHash)
+- belongs_to :shipping_duration (ActiveHash)
 
 ### ordersテーブル
 | Column         | Type       | Options           |
@@ -53,7 +57,7 @@
 | Column        | Type       | Options           |
 | ------------- | ---------- | ----------------- |
 | postcode      | string     | null: false       |
-| prefecture    | string     | null: false       |
+| prefecture_id | integer    | null: false       |
 | city          | string     | null: false       |
 | block         | string     | null: false       |
 | building      | string     | null: false       |
@@ -62,3 +66,4 @@
 
 #### Association
 - belongs_to :order
+- belongs_to :prefecture (ActiveHash)
