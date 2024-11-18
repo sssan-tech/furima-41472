@@ -28,8 +28,6 @@
 | category               | string     | null: false       |
 | condition              | string     | null: false       |
 | price                  | integer    | null: false       |
-| commission             | integer    | null: false       |
-| profit                 | integer    | null: false       |
 | shipping_fee           | string     | null: false       |
 | shipping_method        | string     | null: false       |
 | shipping_from          | string     | null: false       |
