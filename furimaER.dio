@@ -96,7 +96,7 @@
                 <mxCell id="73" value="block：string型(not_null)&#10;" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;" vertex="1" parent="14">
                     <mxGeometry y="116" width="320" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="87" value="building：string型(not_null)&#10;" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;" vertex="1" parent="14">
+                <mxCell id="87" value="building：string型" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;" vertex="1" parent="14">
                     <mxGeometry y="146" width="320" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="32" value="phone：string型(not_null)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;" vertex="1" parent="14">
