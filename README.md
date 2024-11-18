@@ -13,7 +13,6 @@
 | first_name_kana    | string | null: false |
 | nickname           | string | null: false |
 | email              | string | null: false, unique: true |
-| phone              | string | null: false, unique: true |
 | encrypted_password | string | null: false |
 
 #### Association
@@ -62,6 +61,7 @@
 | prefecture    | string     | null: false       |
 | city          | string     | null: false       |
 | line          | string     | null: false       |
+| phone         | string     | null: false       |
 | order_id      | references | null: false, foreign_key: true |
 
 #### Association
