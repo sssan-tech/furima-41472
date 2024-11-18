@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="FJ0M9mBe0Wo4Ruo3_8iB" name="ページ1">
-        <mxGraphModel dx="706" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1055" dy="728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -114,9 +114,6 @@
                 <mxCell id="79" value="" style="edgeStyle=orthogonalEdgeStyle;exitX=-0.013;exitY=-0.152;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERmany;startFill=0;endArrow=ERone;endFill=0;startSize=26;endSize=26;elbow=vertical;labelBackgroundColor=none;labelBorderColor=none;fontSize=12;fontColor=default;strokeWidth=2;exitPerimeter=0;" edge="1" parent="1" source="51" target="33">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="127" style="edgeStyle=orthogonalEdgeStyle;elbow=vertical;html=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontSize=12;fontColor=default;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;startSize=26;endSize=26;" edge="1" parent="1" source="92" target="74">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="92" value="prefecture(ActiveHash)" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;labelBackgroundColor=none;labelBorderColor=none;fontColor=default;gradientColor=none;html=0;swimlaneFillColor=default;" vertex="1" parent="1">
                     <mxGeometry x="220" y="960" width="200" height="80" as="geometry"/>
                 </mxCell>
@@ -173,6 +170,11 @@
                 </mxCell>
                 <mxCell id="120" value="shipping_method" style="align=center;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontColor=default;html=0;" vertex="1" parent="119">
                     <mxGeometry y="40" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="128" style="edgeStyle=orthogonalEdgeStyle;html=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=none;labelBorderColor=none;strokeWidth=2;fontSize=12;fontColor=default;startArrow=ERmany;startFill=0;endArrow=ERone;endFill=0;startSize=26;endSize=26;elbow=vertical;" edge="1" parent="1" source="73">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="320" y="960" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
