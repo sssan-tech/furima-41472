@@ -55,7 +55,8 @@
 | postcode      | string     | null: false       |
 | prefecture    | string     | null: false       |
 | city          | string     | null: false       |
-| line          | string     | null: false       |
+| block         | string     | null: false       |
+| building      | string     | null: false       |
 | phone         | string     | null: false       |
 | order         | references | null: false, foreign_key: true |
 
