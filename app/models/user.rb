@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   FULL_WIDTH_REGEX = /\A[ぁ-んァ-ヶ一-龥々ー]+\z/
   FULL_WIDTH_KANA_REGEX = /\A[ァ-ヴー]+\z/
-  ALPHANUMERIC_REGEX = /(?=.*[a-z])(?=.*\d)\A[a-z\d]+\z/i
+  ALPHANUMERIC_REGEX = /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i # rubocop:disable Style/RedundantRegexpCharacterClass
 
   validates :password, format: { with: ALPHANUMERIC_REGEX, message: 'is invalid. Include both letters and numbers' }
 
