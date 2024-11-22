@@ -1,4 +1,5 @@
 class Item < ApplicationRecord
+  extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :user
   belongs_to :category
   belongs_to :condition
@@ -11,7 +12,7 @@ class Item < ApplicationRecord
     validates :name, :description, :price, :user, :image
   end
 
-  with_options numericality: { other_than: 0 } do
+  with_options numericality: { other_than: 0 , message: "can't be blank" } do
     validates :category_id, :condition_id, :shipping_cost_id, :prefecture_id, :shipping_duration_id
   end
 end
