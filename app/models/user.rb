@@ -4,6 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  has_many :items
+
   FULL_WIDTH_REGEX = /\A[ぁ-んァ-ヶ一-龥々ー]+\z/
   FULL_WIDTH_KANA_REGEX = /\A[ァ-ヴー]+\z/
   ALPHANUMERIC_REGEX = /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i # rubocop:disable Style/RedundantRegexpCharacterClass
