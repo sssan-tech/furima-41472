@@ -93,6 +93,11 @@ RSpec.describe Item, type: :model do
         @item.valid?
         expect(@item.errors.full_messages).to include('Price must be less than or equal to 9999999')
       end
+      it 'priceが整数でなければ登録できない' do
+        @item.price = Faker::Number.between(from: 300.0, to: 9_999_999.0)
+        @item.valid?
+        expect(@item.errors.full_messages).to include('Price must be an integer')
+      end
       it 'priceが数字でなければ登録できない' do
         @item.price = Faker::Lorem.word
         @item.valid?
