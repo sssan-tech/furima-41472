@@ -14,7 +14,7 @@ class OrderAddress
   validates :prefecture_id, numericality: { other_than: 0, message: "can't be blank" }
 
   def save
-    order = Orders.create(item_id: item_id, user_id: user_id)
+    order = Order.create(item_id: item_id, user_id: user_id)
     Address.create(postcode: postcode, prefecture_id: prefecture_id, city: city, block: block, building: building, phone: phone, order_id: order.id) # rubocop:disable Layout/LineLength
   end
 end
